@@ -32,6 +32,18 @@ const questions = [
         name: 'test'
     },
     {
+        message: "What is your github username?",
+        name: 'github'
+    },
+    {
+        message: "What is your email?",
+        name: 'email'
+    },
+    {
+        message: "What is your LinkedIn?",
+        name: 'linkedin'
+    },
+    {
         type: 'list',
         name: 'license',
         message: 'Which license are you using?',

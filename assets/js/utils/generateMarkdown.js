@@ -79,6 +79,7 @@ function generateMarkdown(data) {
   - [Usage](#usage)
   - [Contribute](#contribute)
   - [Test](#test)
+  - [Questions](#questions)
   - [License](#license)
   ## Description
   ${data.description}
@@ -90,6 +91,12 @@ function generateMarkdown(data) {
   ${data.contribute}
   ## Test
   ${data.test}
+  ## Questions
+  Github repo: [!${data.github}](https://github.com/${data.github}?tab=repositories)\n
+  If you have any questions, 
+  email: ${data.email} \n
+  linkedin: ${data.linkedin}
+
   ## License
   The license used for this project is ${data.license}. Get more information by checking out the repo.
 `;
