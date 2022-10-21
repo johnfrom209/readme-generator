@@ -2,6 +2,8 @@
 const fs = require('fs');
 const generateMarkdown = require('./utils/generateMarkdown.js');
 const inquirer = require('inquirer');
+const { default: Choices } = require('inquirer/lib/objects/choices.js');
+const { title } = require('process');
 
 // TODO Create an array of questions for user input
 const questions = [
@@ -26,8 +28,28 @@ const questions = [
         name: 'contribute'
     },
     {
-        message: "How to test",
+        message: "How can someone test your program?",
         name: 'test'
+    },
+    {
+        type: 'list',
+        name: 'license',
+        message: 'Which license are you using?',
+        choices: [
+            'Apache 2.0',
+            "GNU v3.0",
+            "MIT",
+            "BSD 2-Clause",
+            "Boost Software 1.0",
+            "Creative Commons Zero v1",
+            "Eclipse Public License",
+            "BSD 3-New",
+            "GNU Affero",
+            "GNU General",
+            "GNU Lesser",
+            "Mozilla",
+            "The Unlicense"],
+        inital: 1
     }
 ];
 
